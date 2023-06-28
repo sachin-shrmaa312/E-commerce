@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row my-5 img-thumbnail bg-light " *ngIf="details">
+        <div class="col-sm-6">
+            <img src="{{details.productImg}}"  class="img-fluid rounded" width="500px" alt="">
+        </div>
+        <div class="col-sm-6 ">
+            <h2>Product name : {{details.productName | uppercase}}</h2>
+            <h4><b>Price : {{details.productPrice | currency:"INR"}}</b></h4>
+            <h5>Color: {{details.productColor | uppercase}}  |  <span> Category : {{details.productCategory}}</span> </h5>
+            <h5>Details : {{details.productDescription | uppercase}}</h5>
+            <div class="row mt-5">
+                <div class="col-auto">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+                <div class="col-auto">
+                    <button *ngIf="!removeCart" class="btn btn-warning" (click)="adToCart()">Add To Cart</button>
+                </div>
+                <div class="col-auto">
+                    <button *ngIf="removeCart" class="btn btn-warning" (click)="removeToCart(details.id)">Remove To Cart</button>
+                </div>
+            </div>
+            <div class="row mt-4 ">
+                <div class="col-auto">
+                    <button class="btn btn-outline-dark" (click)="haldleQuantity('min')"> - </button>
+                </div>
+                <div class="col-auto text-center">
+                    <input type="number" class="form-control" value="{{productQty}}">
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-outline-dark" (click)="haldleQuantity('max')"> + </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

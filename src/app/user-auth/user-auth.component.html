@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8 py-5 page-toggle" *ngIf="showLogin">
+            <div class="card  ">
+             <div class="card-body bg-light">
+                 <div class="card-title bg-success  py-1 text-center">
+                     <h1 class="text-warning">Sign-Up Here !  </h1>
+                 </div>
+                 <div class="row justify-content-center">
+                     <div class="col-8">
+                         <form  [formGroup]="signup" >
+                             <label for="name" class="form-label">Name :</label>
+                             <input type="text" id="name" class="form-control" placeholder="enter your name" required name="name" formControlName="name">
+                            <small class="text-danger"  *ngIf="signup.get('name')?.invalid && signup.get('name')?.touched">Enter Valid Name</small><br>
+             
+                            <label for="name" class="form-label">Password :</label>
+                            <input type="password" id="password" class="form-control" placeholder="enter your password" required name="password" formControlName="password">
+                             <small class="text-danger" *ngIf="signup.get('password')?.invalid && signup.get('password')?.touched">enter minimum 8 and maximum 15 character</small><br>
+             
+                             <label for="" class="form-label mt-2"> User Email : </label>
+                         <input type="email" required id="email" class="form-control" email required name="email" formControlName="email" placeholder="example@gmail.com">
+                         <small class="text-danger"  *ngIf="signup.get('email')?.invalid && signup.get('email')?.touched">Enter Valid Email</small><br>
+ 
+                             <div class="row text-center">
+                                 <div class="col">
+                                     <button class="btn btn-primary"  type="submit" (click)="submitSignUp()"  >Sign-Up</button>
+                                     
+                                 </div>
+                                 <p class="page-toggle">already have account? <a (click)="openLogin()" >click here</a> to login</p>
+                             </div>
+                         </form>
+                     </div>
+                 </div>
+             </div>
+            </div>
+         </div>
+         <div class="col-md-8 py-5 page-toggle"  *ngIf="!showLogin">
+            <div class="card  ">
+             <div class="card-body bg-light">
+                <h1 class="text-danger text-center">{{authError}}</h1>
+                 <div class="card-title bg-success  py-1 text-center">
+                     <h1 class="text-warning">Login Here ! </h1>
+                 </div>
+                 <div class="row justify-content-center">
+                     <div class="col-8">
+                         <form  [formGroup]="login" >
+                            <p class="text-danger"></p>
+                             <label for="" class="form-label mt-2"> User Email : </label>
+                         <input type="email" required id="email" class="form-control" email required name="email" formControlName="email" placeholder="example@gmail.com">
+                         <small class="text-danger"  *ngIf="login.get('email')?.invalid && login.get('email')?.touched">Enter Valid Email</small><br>
+                            
+                            <label for="name" class="form-label">Password :</label>
+                            <input type="password" id="password" class="form-control" placeholder="enter your password" required name="password" formControlName="password">
+
+                             <small class="text-danger" *ngIf="login.get('password')?.invalid && login.get('password')?.touched">enter minimum 8 and maximum 15 character</small><br>
+             
+                             <div class="row text-center">
+                                 <div class="col-12">
+                                     <button class="btn btn-primary" type="submit" (click)="submitLogin()">Login </button>
+                                 </div>
+                                 <p class="page-toggle" >Dont have account? <a (click)="openSignUp()"> click here </a> to Sing-Up</p>
+
+                             </div>
+                         </form>
+                     </div>
+                 </div>
+             </div>
+            </div>
+         </div>
+    </div>
+</div>

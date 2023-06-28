@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<div class="container-fluid main-section header-section">
+    <div class="row justify-content-center my-2 text-center">
+        <div class="col-md-12">
+             <h1 class="text-primary"><span class="text-success ">Popular </span> Products`</h1>
+         </div>
+     </div>
+     
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" *ngIf="popularItem">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" >
+      <div class="carousel-item active" *ngFor="let item of popularItem">
+        <img src="{{item.productImg}}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block  ">
+            <h5 routerLink="/details/{{item.id}}">{{item.productPrice | currency:"INR"}}</h5>
+            <h5 routerLink="/details/{{item.id}}" class="card-title">{{item.productName}}</h5>
+            <p>{{item.productDescription}}</p>
+          </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+<!-- fetured products  -->
+
+
+    <div class="row justify-content-center mt-5 text-center">
+        <div class="col-md-12">
+             <h1 class="text-primary"><span class="text-success ">Featured </span> Products`</h1>
+         </div>
+     </div>
+     
+
+
+<div class="container">
+    
+    <div class="row  justify-content-center" *ngIf="trendy">
+        <div class="col-md-4 col-lg-3 my-3 " *ngFor="let item of trendy">
+            <div class="card m-2" style="width: 18rem;">
+                <img src="{{item.productImg}}" class="card-img-top" height="300px" routerLink="/details/{{item.id}}"  alt="...">
+                <div class="card-body m-1 p-1">
+                  <h5 class="card-title m-0">{{item.productName}}</h5>
+                  <i class="fa-solid fa-star card-text text-warning"></i>
+                  <i class="fa-solid fa-star card-text text-warning"></i>
+                  <i class="fa-solid fa-star card-text text-warning"></i>
+                  <i class="fa-solid fa-star card-text text-warning"></i>
+                  <i class="fa fa-star card-text text-warning"></i>
+                  <p class="card-text m-1">{{item.productPrice | currency:'INR'}}</p>
+                  <div class="row justify-content-center">
+                      <a routerLink="/details/{{item.id}}" class="btn btn-primary btn-sm col-4  m-1">Buy Now</a>
+                    <a routerLink="/details/{{item.id}}"  class="btn btn-info btn-sm col-4  m-1">Add To Cart</a>
+                  </div>
+                  <a routerLink="/details/{{item.id}}"  class="btn btn-warning btn-sm d-grid gap-2">Product Details</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+

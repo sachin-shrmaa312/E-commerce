@@ -1,0 +1,21 @@
+
+#email.ng-invalid.ng-touched {
+    border-color: red;
+}
+
+
+#name.ng-invalid.ng-touched {
+    border-color: red;
+}
+
+#password.ng-invalid.ng-touched {
+    border-color: red;
+}
+.page-toggle{
+    color: #666;
+    margin:  5px 0;
+}
+.page-toggle a{
+    cursor: pointer;
+    text-decoration: underline;
+}

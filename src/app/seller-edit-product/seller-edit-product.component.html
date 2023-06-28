@@ -1,0 +1,52 @@
+<div class="add-product">
+    <div class="container">
+        <div class="row justify-content-center my-5">
+            <div class="col-md-8">
+                <h1 class="text-primary">{{productMsg}}</h1>
+                <div class="card">
+                    <div class="card-body">
+                        <!-- <h1 class="text-success text-center">{{productMsg}}</h1> -->
+                        <div class="card-title bg-success  py-1 text-center">
+                            <h1 class="text-warning">Please Update details</h1>
+                        </div>
+                        <form [formGroup]="updateForm" (submit)="update(updateForm.value)" >
+                            <div class="row my-3">
+                                    <div class="col-md-6">
+                                        <input type="text" name="productName" formControlName="productName" placeholder="enter product name" class="form-control">
+                                        <label for="productName" class="form-label px-1">Name :</label>
+                                    </div>
+                                <div class="col-md-6">
+                                        <input type="text" name="productPrice" formControlName="productPrice" placeholder="enter product price" class="form-control">
+                                        <label for="productPrice" class="form-label px-1">Price :</label>
+                                </div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-md-6">
+                                        <input type="text" name="productCategory" formControlName="productCategory" placeholder="enter product category" class="form-control">
+                                        <label for="productCategory" class="form-label px-1">Category :</label>
+                                </div>
+                                <div class="col-md-6">
+                                        <input type="text" name="productColor" formControlName="productColor" placeholder="enter product color" class="form-control">
+                                        <label for="productColor" class="form-label px-1">Color :</label>
+                                </div>
+                            </div>
+                            <div class="row my-2">
+                                <div class="col-md-6">
+                                        <textarea type="text" name="productDescription" formControlName="productDescription" placeholder="enter product description" class="form-control" ></textarea>
+                                        <label for="productDescription" class="form-label px-1">Description :</label>
+                                </div>
+                                <div class="col-md-6">
+                                        <input type="text" name="productImg" formControlName="productImg" placeholder="enter product img url" class="form-control">
+                                        <label for="productImg" class="form-label px-1">Image Url :</label>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                    <button class="btn btn-primary" type="submit" >Upate</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

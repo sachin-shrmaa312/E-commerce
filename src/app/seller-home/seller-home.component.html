@@ -1,0 +1,46 @@
+<div class="product-list">
+    <div class="container">
+        <div class="row my-5">
+            <p>{{porductMgs}}</p>
+            <table class="table table-hover table-warning table-striped text-center">
+                <thead class="table-info p-3 ">
+                    <tr>
+                        <th>IMAGE</th>
+                        <th>NAME</th>
+                        <th>CATOGERY</th>
+                        <th>PRICE</th>
+                        <th>COLOR</th>
+                        <th>DESCRIPTION</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of product_list">
+                        <td><img src="{{item.productImg}}" width="100px" alt=""></td>
+                        <td>{{item.productName}}</td>
+                        <td>{{item.productCategory}}</td>
+                        <td>{{item.productPrice}}</td>
+                        <td>{{item.productColor}}</td>
+                        <td>{{item.productDescription}}</td>
+                        <td>
+                            <button class="btn btn-primary mx-3" routerLink="/seller-edit-product/{{item.id}}">EDIT </button>
+                            <button class="btn btn-danger"(click)="deleteItem(item.id)">DELETE</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- <div class="card-body">
+    <div class="card-title">{{item.productName}}</div>
+    <div class="card-text">{{item.productCategory }}</div>
+    <div class="card-text">{{item.productColor }}</div>
+    <div class="card-text">{{item.productDescription }}</div>
+    <button class="btn btn-info">Buy Price : {{item.productPrice}}</button>
+</div> -->

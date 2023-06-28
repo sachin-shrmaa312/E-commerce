@@ -1,0 +1,18 @@
+.search-box{
+    position: absolute;
+    display: list-item !important;
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    top: 60px;
+    border: 1px solid gray;
+    list-style: none;
+}
+.search-box li{
+    border: 1px solid gray;
+    padding: 5px;
+}
+.search-box li a{
+    cursor: pointer;
+
+}

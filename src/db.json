@@ -1,0 +1,194 @@
+{
+  "seller": [
+    {
+      "name": "sachin",
+      "password": "11111111",
+      "email": "sachin@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "sachin sharma",
+      "password": "12345678",
+      "email": "sachin@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "anand",
+      "password": "1234567890",
+      "email": "sacha2@fmail.cm",
+      "id": 8
+    },
+    {
+      "name": "monu chauhan",
+      "password": "aaaa1111",
+      "email": "monu@test.com",
+      "id": 9
+    },
+    {
+      "name": "test",
+      "password": "test123",
+      "email": "test@gmail.com",
+      "id": 10
+    }
+  ],
+  "products": [
+    {
+      "productName": "Combo Products",
+      "productPrice": "75000",
+      "productCategory": "Electronics",
+      "productColor": "red, gray, black",
+      "productDescription": "All products in discount rate",
+      "productImg": "https://d3nn873nee648n.cloudfront.net/900x600/19086/120-SM895202.jpg",
+      "id": 1
+    },
+    {
+      "productName": "HP thin and light laptop",
+      "productPrice": "45000",
+      "productCategory": "electronic",
+      "productColor": "white",
+      "productDescription": "ryzen 3 processor, 1TB storage",
+      "productImg": "https://d3nn873nee648n.cloudfront.net/900x600/19197/220-SM904574.jpg",
+      "id": 2
+    },
+    {
+      "productName": "Scientific Calculator",
+      "productPrice": "3500",
+      "productCategory": "electronic",
+      "productColor": "gray",
+      "productDescription": "fast light and 20 digit calculator",
+      "productImg": "https://d3nn873nee648n.cloudfront.net/900x600/8119/20-SM198072.jpg",
+      "id": 3
+    },
+    {
+      "productName": "Combo Products",
+      "productPrice": "75000",
+      "productCategory": "Electronics",
+      "productColor": "red, gray, black",
+      "productDescription": "All products in discount rate",
+      "productImg": "https://d3nn873nee648n.cloudfront.net/900x600/19086/120-SM895202.jpg",
+      "id": 4
+    },
+    {
+      "productName": "laptop",
+      "productPrice": "40000",
+      "productCategory": "electronic",
+      "productColor": "gray",
+      "productDescription": "fryyyyyyt",
+      "productImg": "https://d3nn873nee648n.cloudfront.net/900x600/19086/220-SM895223.jpg",
+      "id": 5
+    },
+    {
+      "productName": "i phone",
+      "productPrice": "150000",
+      "productCategory": "phone",
+      "productColor": "white",
+      "productDescription": "technology",
+      "productImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCKLaPXYf0uA37sKmPGtgaILT8cVTE1RT5vK-5g0ehr5Mxa6rMZiYqDHkRpKaoE8PaH8&usqp=CAU",
+      "id": 14
+    },
+    {
+      "productName": "5D video game",
+      "productPrice": "25000",
+      "productCategory": "gaming",
+      "productColor": "black and grey",
+      "productDescription": "fast and portable ultra gaming",
+      "productImg": "https://d3nn873nee648n.cloudfront.net/900x600/18976/16-SM885532.jpg",
+      "id": 15
+    }
+  ],
+  "userLogin": [
+    {
+      "name": "sachin",
+      "password": "12345678",
+      "email": "sacihin@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "anand",
+      "password": "11111111",
+      "email": "anand@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "test",
+      "password": "test123",
+      "email": "test@gmail.com",
+      "id": 3
+    }
+  ],
+  "cart": [
+    {
+      "productName": "Scientific Calculator",
+      "productPrice": "3500",
+      "productCategory": "electronic",
+      "productColor": "gray",
+      "productDescription": "fast light and 20 digit calculator",
+      "productImg": "https://d3nn873nee648n.cloudfront.net/900x600/8119/20-SM198072.jpg",
+      "productQty": 10,
+      "userId": 3,
+      "productId": 3,
+      "id": 1
+    },
+    {
+      "productName": "HP thin and light laptop",
+      "productPrice": "45000",
+      "productCategory": "electronic",
+      "productColor": "white",
+      "productDescription": "ryzen 3 processor, 1TB storage",
+      "productImg": "https://d3nn873nee648n.cloudfront.net/900x600/19197/220-SM904574.jpg",
+      "productQty": 1,
+      "userId": 3,
+      "productId": 2,
+      "id": 2
+    },
+    {
+      "productName": "Scientific Calculator",
+      "productPrice": "3500",
+      "productCategory": "electronic",
+      "productColor": "gray",
+      "productDescription": "fast light and 20 digit calculator",
+      "productImg": "https://d3nn873nee648n.cloudfront.net/900x600/8119/20-SM198072.jpg",
+      "productQty": 3,
+      "userId": 1,
+      "productId": 3,
+      "id": 4
+    },
+    {
+      "productName": "HP thin and light laptop",
+      "productPrice": "45000",
+      "productCategory": "electronic",
+      "productColor": "white",
+      "productDescription": "ryzen 3 processor, 1TB storage",
+      "productImg": "https://d3nn873nee648n.cloudfront.net/900x600/19197/220-SM904574.jpg",
+      "productQty": 2,
+      "userId": 1,
+      "productId": 2,
+      "id": 5
+    },
+    {
+      "productName": "i phone",
+      "productPrice": "150000",
+      "productCategory": "phone",
+      "productColor": "white",
+      "productDescription": "technology",
+      "productImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfCKLaPXYf0uA37sKmPGtgaILT8cVTE1RT5vK-5g0ehr5Mxa6rMZiYqDHkRpKaoE8PaH8&usqp=CAU",
+      "productQty": 1,
+      "userId": 1,
+      "productId": 14,
+      "id": 6
+    },
+    {
+      "productName": "Combo Products",
+      "productPrice": "75000",
+      "productCategory": "Electronics",
+      "productColor": "red, gray, black",
+      "productDescription": "All products in discount rate",
+      "productImg": "https://d3nn873nee648n.cloudfront.net/900x600/19086/120-SM895202.jpg",
+      "productQty": 13,
+      "userId": 3,
+      "productId": 1,
+      "id": 7
+    }
+  ],
+  "orders": []
+}

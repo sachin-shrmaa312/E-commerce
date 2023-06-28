@@ -1,0 +1,33 @@
+.details ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #bdbdbd;
+}
+.details{
+    border: 1px solid #bdbdbd;
+    padding: 10px;
+    border-radius: 5px;
+}
+.summary{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.summary h1{
+    text-align: center;
+}
+.summary ul{
+    list-style: none;
+    padding: 5%;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 5px;
+}
+.summary ul li{
+    display: flex;
+    justify-content: space-between;
+}

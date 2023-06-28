@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row my-5 img-thumbnail bg-light" *ngFor="let item of searchRes">
+        <div class="col-sm-3 ">
+           <a routerLink="/details/{{item.id}}">
+            <img src="{{item.productImg}}" class="img-fluid rounded" width="250px" alt="">
+           </a>
+        </div>
+        <div class="col-sm-8 deatils">
+            <a routerLink="/details/{{item.id}}">
+                <h2>Product name : {{item.productName | uppercase}}</h2>
+            </a>
+            <p><b>Price : {{item.productPrice | currency:"INR"}}</b></p>
+            <p>Color: {{item.productColor | uppercase}}  |  <span> Category : {{item.productCategory}}</span> </p>
+            <p>Details : {{item.productDescription | uppercase}}</p>
+        </div>
+    </div>
+</div>

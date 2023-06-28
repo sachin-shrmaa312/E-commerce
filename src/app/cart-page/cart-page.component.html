@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row justify-content-center my-1 text-center">
+        <div class="col-md-12">
+             <h1 class="text-primary"><span class="text-success ">Popular </span> Products`</h1>
+         </div>
+     </div>
+    <div class="row">
+        <div class="col-sm-8 details">
+            <ul *ngFor="let cart of cartData">
+                <li>
+                    <img src="{{cart.productImg}}" width="240px" class="rounded" alt="">
+                </li>
+                <li>
+                    <span>{{cart.productName}}</span>
+                </li>
+                <li>
+                    <span>{{cart.productPrice | currency:'INR'}}</span>
+                </li>
+                <li>
+                    <span> Quantity :  {{cart.productQty}}</span>
+                </li>
+                <li>
+                    <button class="form-btn">Remove To Cart</button>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-sm-4 summary">
+            <h3 class="text-center">Summary</h3>
+            <ul>
+                <li><span>Amount : </span> <span>{{priceSummry.price  | currency:'INR'}}</span></li>
+                <li><span>Tax : </span> <span>{{priceSummry.tax  | currency:'INR'}}</span></li>
+                <li><span>Delivery : </span> <span>{{priceSummry.delivery  | currency:'INR'}}</span></li>
+                <li><span>Discount : </span> <span>{{priceSummry.discount  | currency:'INR'}}</span></li>
+                <li><span><h4>Total : </h4> </span> <span><h4>{{priceSummry.total  | currency:'INR'}}</h4></span></li>
+                <button class="btn btn-outline-secondary w-100 my-2" (click)="CheckOut()">
+                    Check Out 
+                </button>
+            </ul>
+        </div>
+    </div>
+</div>

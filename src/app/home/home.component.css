@@ -1,0 +1,36 @@
+
+/* body{
+    font-family: 'Roboto', sans-serif;
+} */
+
+.main-section{
+    background: radial-gradient(#fff, #ffd6d6);
+}
+.header-section{
+    background: radial-gradient(#fff, #9bffff);
+    height: 100%;
+    padding: 50px 0;
+    position: relative;
+}
+.card{
+    box-shadow: 3px 3px 3px gray;
+    transition: 0.3s ease-in-out;
+    
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.carousel-item img{
+    object-fit: contain;
+    height: 600px;
+    width: 100%;
+}
+.carousel-caption{
+    background-color: rgba(182, 182, 182, 0.8);
+}
+.card-title{
+    cursor: pointer;
+}
